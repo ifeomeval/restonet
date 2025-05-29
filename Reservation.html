@@ -2,279 +2,297 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./STYLE/restaurant.css">
-    <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="./STYLE/restaurant.css">
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <!-- Email js CDN -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <!-- Email js CDN -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 </head>
+
 <body>
-    <div data-aos="zoom-in">
-        <div class="container-fluid" style="background-color: #FFF7EA; color: black;">
-           <nav class="navbar navbar-expand-lg" style="background-color: #000000; color: aliceblue; padding: 30px;">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="./IMAGES/RestoNest.png" alt="">
-                </a>
+  <div data-aos="zoom-in">
+    <div class="container-fluid" style="background-color: #FFF7EA; color: black;">
+      <nav class="navbar navbar-expand-lg" style="background-color: #000000; color: aliceblue; padding: 30px;">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand" href="#">
+            <img src="./IMAGES/RestoNest.png" alt="">
+          </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+          <!-- Toggler Button -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-                <div class="container">
-  <div class="row justify-content-center">
-    <div class="col-12 col-md-auto">
-      <ul class="nav flex-column flex-md-row justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link text-white active" href="index.html">HOME</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white active" href="About.html">ABOUT</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white active" href="Menu.html">MENU</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white active" href="Reservation.html">RESERVATION</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white active" href="Contact.html">CONTACT</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-                <div>
-                    <div class="d-flex flex-column flex-md-row gap-2">
-                        <a href="AddtoCart.html" class="btn" style="background-color: #FF9900; color: #000000; border: none; width: 80px;">Cart</a>
-                        <a href="Login.html" class="btn" style="background-color: #FF9900; color: #000000; border: none; width: 80px;">Login</a>
-                    </div>
+          <!-- Collapsible Content -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="container">
+              <div class="row text-center text-md-start">
+                <!-- Navigation Links -->
+                <div class="col-12 col-md-8 mb-3 mb-md-0">
+                  <ul class="nav flex-column flex-md-row justify-content-center">
+                    <li class="nav-item">
+                      <a class="nav-link text-white active" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white active" href="About.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white active" href="Menu.html">MENU</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white active" href="Reservation.html">RESERVATION</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white active" href="Contact.html">CONTACT</a>
+                    </li>
+                  </ul>
                 </div>
+
+                <!-- Buttons (Cart + Login) -->
+                <div
+                  class="col-12 col-md-4 d-flex flex-column flex-md-row gap-2 justify-content-center justify-content-md-end">
+                  <a href="AddtoCart.html" class="btn"
+                    style="background-color: #FF9900; color: #000000; border: none; width: 80px;">Cart</a>
+                  <a href="Login.html" class="btn"
+                    style="background-color: #FF9900; color: #000000; border: none; width: 80px;">Login</a>
+                </div>
+              </div>
             </div>
-          </nav>
+          </div>
         </div>
-    </div><br><br><br>
+      </nav>
 
-    <div data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
+    </div>
+  </div><br><br><br>
+
+  <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
     <div class="container justify-content-center text-center" style="background-color: white;">
-        <img src="./IMAGES/Line2.png" alt="">
-        <h6 class="" style="height: 5px;">RESERVATION</h6>
-        <img src="./IMAGES/Line2.png" alt="">
-        <h3>Book The Seat Now Here Easily</h3>
+      <img src="./IMAGES/Line2.png" alt="">
+      <h6 class="" style="height: 5px;">RESERVATION</h6>
+      <img src="./IMAGES/Line2.png" alt="">
+      <h3>Book The Seat Now Here Easily</h3>
     </div>
 
- <div class="container my-5">
-  <div class="row align-items-center">
-    <!-- Image Section -->
-    <div class="col-12 col-lg-6 mb-4 mb-lg-0 text-center">
-      <img src="./IMAGES/Reserimage1.png" alt="Reservation Image" class="img-fluid">
-    </div>
+    <div class="container my-5">
+      <div class="row align-items-center">
+        <!-- Image Section -->
+        <div class="col-12 col-lg-6 mb-4 mb-lg-0 text-center">
+          <img src="./IMAGES/Reserimage1.png" alt="Reservation Image" class="img-fluid">
+        </div>
 
-    <!-- Form Section -->
-    <div class="col-12 col-lg-6">
-      <div class="text-start">
-        <img src="./IMAGES/Line2.png" alt="">
-        <h6 style="height: 5px;">RESERVATION</h6>
-        <img src="./IMAGES/Line2.png" alt="">
-        <h3>Book your table now</h3>
-        <p>
-          The people, food and the prime locations make Rodich the <br>
-          perfect place good friends & family to come together and <br>
-          have great time.
-        </p>
+        <!-- Form Section -->
+        <div class="col-12 col-lg-6">
+          <div class="text-start">
+            <img src="./IMAGES/Line2.png" alt="">
+            <h6 style="height: 5px;">RESERVATION</h6>
+            <img src="./IMAGES/Line2.png" alt="">
+            <h3>Book your table now</h3>
+            <p>
+              The people, food and the prime locations make Rodich the <br>
+              perfect place good friends & family to come together and <br>
+              have great time.
+            </p>
+          </div>
+
+          <form id="reservation">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <input type="text" class="form-control" name="name" placeholder="Name"
+                  style="background-color: #FFF7EA;">
+              </div>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" name="email" placeholder="Email"
+                  style="background-color: #FFF7EA;">
+              </div>
+
+              <div class="col-sm-6">
+                <input type="text" class="form-control" name="message" placeholder="Message"
+                  style="background-color: #FFF7EA;">
+              </div>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" name="time" placeholder="Timing"
+                  style="background-color: #FFF7EA;">
+              </div>
+
+              <div class="col-sm-6">
+                <input type="text" class="form-control" name="date" placeholder="Date"
+                  style="background-color: #FFF7EA;">
+              </div>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" name="zip code" placeholder="ZIP Code"
+                  style="background-color: #FFF7EA;">
+              </div>
+            </div>
+
+            <div class="mt-4">
+              <input type="submit" value="Book a Table" class="btn btn-primary"
+                style="background-color: #FF9900; color: #000000; border: none;">
+              <!-- <a href="BookaTable.html" class="btn btn-primary" style="background-color: #FF9900; color: #000000; border-color: #FF9900;">Book a Table</a> -->
+            </div>
+          </form>
+        </div>
       </div>
+    </div>
 
-      <form id="reservation">
-        <div class="row g-3">
-          <div class="col-sm-6">
-            <input type="text" class="form-control" name="name" placeholder="Name" style="background-color: #FFF7EA;">
-          </div>
-          <div class="col-sm-6">
-            <input type="text" class="form-control" name="email" placeholder="Email" style="background-color: #FFF7EA;">
-          </div>
 
-          <div class="col-sm-6">
-            <input type="text" class="form-control" name="message" placeholder="Message" style="background-color: #FFF7EA;">
-          </div>
-          <div class="col-sm-6">
-            <input type="text" class="form-control" name="time" placeholder="Timing" style="background-color: #FFF7EA;">
-          </div>
+    <div class="container justify-content-center text-center" style="background-color: white;">
+      <img src="./IMAGES/Line2.png" alt="">
+      <h6 class="" style="height: 5px;">GALARY</h6>
+      <img src="./IMAGES/Line2.png" alt="">
+      <h3>What You Can Expect From Us</h3>
+    </div>
 
-          <div class="col-sm-6">
-            <input type="text" class="form-control" name="date" placeholder="Date" style="background-color: #FFF7EA;">
+    <div class="container text-center my-5">
+      <div class="row justify-content-center">
+        <!-- Left Column with Two Images -->
+        <div class="col-12 col-md-4 mb-4">
+          <div class="mb-3">
+            <img src="./IMAGES/PancakeImage.png" alt="Pancake" class="img-fluid">
           </div>
-          <div class="col-sm-6">
-            <input type="text" class="form-control" name="zip code" placeholder="ZIP Code" style="background-color: #FFF7EA;">
+          <div>
+            <img src="./IMAGES/ChopstickImage.png" alt="Chopsticks" class="img-fluid">
           </div>
         </div>
 
-        <div class="mt-4">
-          <input type="submit" value="Book a Table" class="btn btn-primary"
-          style="background-color: #FF9900; color: #000000; border: none;">
-          <!-- <a href="BookaTable.html" class="btn btn-primary" style="background-color: #FF9900; color: #000000; border-color: #FF9900;">Book a Table</a> -->
+        <!-- Middle Image -->
+        <div class="col-12 col-md-4 mb-4 d-flex align-items-center justify-content-center">
+          <img src="./IMAGES/Restview.png" alt="Restaurant View" class="img-fluid">
         </div>
-      </form>
+
+        <!-- Right Column with Two Images -->
+        <div class="col-12 col-md-4 mb-4">
+          <div class="mb-3">
+            <img src="./IMAGES/SalmonPhoto.jpg" alt="Salmon" class="img-fluid">
+          </div>
+          <div>
+            <img src="./IMAGES/ChampaignPhoto.png" alt="Champaign" class="img-fluid">
+          </div>
+        </div>
+      </div>
     </div>
   </div>
- </div>
-
-
-    <div class="container justify-content-center text-center" style="background-color: white;">
-        <img src="./IMAGES/Line2.png" alt="">
-        <h6 class="" style="height: 5px;">GALARY</h6>
-        <img src="./IMAGES/Line2.png" alt="">
-        <h3>What You Can Expect From Us</h3>
-    </div>
-
- <div class="container text-center my-5">
-  <div class="row justify-content-center">
-    <!-- Left Column with Two Images -->
-    <div class="col-12 col-md-4 mb-4">
-      <div class="mb-3">
-        <img src="./IMAGES/PancakeImage.png" alt="Pancake" class="img-fluid">
-      </div>
-      <div>
-        <img src="./IMAGES/ChopstickImage.png" alt="Chopsticks" class="img-fluid">
-      </div>
-    </div>
-
-    <!-- Middle Image -->
-    <div class="col-12 col-md-4 mb-4 d-flex align-items-center justify-content-center">
-      <img src="./IMAGES/Restview.png" alt="Restaurant View" class="img-fluid">
-    </div>
-
-    <!-- Right Column with Two Images -->
-    <div class="col-12 col-md-4 mb-4">
-      <div class="mb-3">
-        <img src="./IMAGES/SalmonPhoto.jpg" alt="Salmon" class="img-fluid">
-      </div>
-      <div>
-        <img src="./IMAGES/ChampaignPhoto.png" alt="Champaign" class="img-fluid">
-      </div>
-    </div>
-  </div>
- </div>
- </div>
 
 
 
- <div data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">
- <div class="container justify-content-center text-center" style="background-image: url('./IMAGES/SubscribeBackground.png'); background-repeat: no-repeat; background-size: cover;">
+  <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+    <div class="container justify-content-center text-center"
+      style="background-image: url('./IMAGES/SubscribeBackground.png'); background-repeat: no-repeat; background-size: cover;">
 
-    <div class="row justify-content-center d-flex">
-     <div class="col-12 col-sm-4 lg-4"><br><br><br><br><br><br>
-         <div>
-             <img src="./IMAGES/Line2.png" alt=""><br>
-             <h6 style="color: white;">CONTACT</h6>
-             <img src="./IMAGES/Line2.png" alt="">
-         </div>
-         <div>
-             <p style="color: white;">
-                 5 Rue Dalou, 75015 Paris <br>
-                 Call - +33 156 78 89 56 <br>
-                 restonest@mail.com
-             </p>
-         </div>
-     </div>
-       <div class="justify-content-center col-12 col-sm-4 lg-4"><br>
-           <div>
-             <img src="./IMAGES/RestoNest.png" alt="">
+      <div class="row justify-content-center d-flex">
+        <div class="col-12 col-sm-4 lg-4"><br><br><br><br><br><br>
+          <div>
+            <img src="./IMAGES/Line2.png" alt=""><br>
+            <h6 style="color: white;">CONTACT</h6>
+            <img src="./IMAGES/Line2.png" alt="">
+          </div>
+          <div>
+            <p style="color: white;">
+              5 Rue Dalou, 75015 Paris <br>
+              Call - +33 156 78 89 56 <br>
+              restonest@mail.com
+            </p>
+          </div>
+        </div>
+        <div class="justify-content-center col-12 col-sm-4 lg-4"><br>
+          <div>
+            <img src="./IMAGES/RestoNest.png" alt="">
           </div><br><br>
           <div>
-             <h6 style="color: white;">Join our mailing list for updates,<br>Get news & offers events.</h6>
-         </div><br>
-         <div>
-             <div class="bg-warning p-2 rounded">
-                 <form class="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-2">
-                     <input class="form-control" type="email" placeholder="Email" style="background-color: #000; border-color: #000; color: white; max-width: 200px;">
-                     <button class="btn btn-dark" type="submit" style="border-color: #FF9900; color: #FF9900;">Subscribe</button>
-                 </form>
-             </div>
-         </div>
-      </div>
-       <div class="justify-content-center col-12 col-sm-4 lg-4"><br><br>
-         <div>
-             <img src="./IMAGES/Social Media Icon.png" alt="" class="img-fluid" style="padding-right: 50px; max-width: 250px;">
-         </div><br><br><br>
-         <div>
-             <img src="./IMAGES/Line2.png" alt="" width="130px"><br>
-             <h6 style="color: white;">WORKING HOURS</h6>
-             <img src="./IMAGES/Line2.png" alt="" width="130px">
-         </div>
-         <div>
-             <p style="color: white;">
-                 Mon – Fri: 7.00am – 10.00pm <br>
-                 Sat: 7.00am – 6.00pm <br>
-                 Sun: 8.00am – 6.00pm
-             </p>
-         </div>
-     </div>
-    </div>
-
-
-
-    <!-- Footer Note -->
-    <div class="row py-4">
-        <div class="col-12">
-            <p class="text-white">© Copyright - RestoNest 2024 | Designed by Sushmitha Shettigar</p>
+            <h6 style="color: white;">Join our mailing list for updates,<br>Get news & offers events.</h6>
+          </div><br>
+          <div>
+            <div class="bg-warning p-2 rounded">
+              <form class="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-2">
+                <input class="form-control" type="email" placeholder="Email"
+                  style="background-color: #000; border-color: #000; color: white; max-width: 200px;">
+                <button class="btn btn-dark" type="submit"
+                  style="border-color: #FF9900; color: #FF9900;">Subscribe</button>
+              </form>
+            </div>
+          </div>
         </div>
+        <div class="justify-content-center col-12 col-sm-4 lg-4"><br><br>
+          <div>
+            <img src="./IMAGES/Social Media Icon.png" alt="" class="img-fluid"
+              style="padding-right: 50px; max-width: 250px;">
+          </div><br><br><br>
+          <div>
+            <img src="./IMAGES/Line2.png" alt="" width="130px"><br>
+            <h6 style="color: white;">WORKING HOURS</h6>
+            <img src="./IMAGES/Line2.png" alt="" width="130px">
+          </div>
+          <div>
+            <p style="color: white;">
+              Mon – Fri: 7.00am – 10.00pm <br>
+              Sat: 7.00am – 6.00pm <br>
+              Sun: 8.00am – 6.00pm
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- Footer Note -->
+      <div class="row py-4">
+        <div class="col-12">
+          <p class="text-white">© Copyright - RestoNest 2024 | Designed by Sushmitha Shettigar</p>
+        </div>
+      </div>
     </div>
- </div>
- </div>
+  </div>
 
 
 
 
 
 
- <!-- Email js script code -->
+  <!-- Email js script code -->
 
-    <script type="text/javascript">
-        (function () {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init({
-                publicKey: "FJiPl9s_u8tC0_Zbx",
-            });
-        })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function () {
-            document.getElementById('reservation').addEventListener('submit', function (event) {
-                event.preventDefault();
-                // these IDs from the previous steps
-                emailjs.sendForm('service_unokvin', 'template_tg80s3w', this)
-                    .then(() => {
-                        alert('your message has been sent successfully!');
-                        // Reset the form after successful submission
-                        document.getElementById('reservation').reset();
-                        console.log('SUCCESS!');
-                    }, (error) => {
-                        alert('Oops... ' + JSON.stringify(error));
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
+  <script type="text/javascript">
+    (function () {
+      // https://dashboard.emailjs.com/admin/account
+      emailjs.init({
+        publicKey: "FJiPl9s_u8tC0_Zbx",
+      });
+    })();
+  </script>
+  <script type="text/javascript">
+    window.onload = function () {
+      document.getElementById('reservation').addEventListener('submit', function (event) {
+        event.preventDefault();
+        // these IDs from the previous steps
+        emailjs.sendForm('service_unokvin', 'template_tg80s3w', this)
+          .then(() => {
+            alert('your message has been sent successfully!');
+            // Reset the form after successful submission
+            document.getElementById('reservation').reset();
+            console.log('SUCCESS!');
+          }, (error) => {
+            alert('Oops... ' + JSON.stringify(error));
+            console.log('FAILED...', error);
+          });
+      });
+    }
+  </script>
 
 
-    
-    
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"
+    integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D"
+    crossorigin="anonymous"></script>
 </body>
